@@ -80,6 +80,9 @@ li img {
   padding-top: 20px;
   padding-bottom: 20px;
   overflow: hidden;
+  border-radius: 0 0 50px 50px;
+  position: relative;
+  z-index: 1;
 }
 
 #experience-container-slider {
@@ -108,4 +111,74 @@ li img {
 /******************* PROJECTS *******************/
 #projects-container {
   background-color: #000;
+  padding: 20px;
+  position: relative;
+  top: -50px;
+  z-index: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 0 0 50px 50px;
+}
+
+#projects-container h1 {
+  font-size: 1.5em;
+}
+
+.project-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.project-image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.project-block h2 {
+  width: 100%;
+  font-size: 1.5em;
+  line-height: 1.25;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.language-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  margin-top: 10px;
+}
+
+.language-list li {
+  list-style-type: none;
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-size: 1.15em;
+  font-weight: 600;
+  color: rgb(183, 183, 183);
+}
+
+.project-links {
+  display: flex;
+  padding: 0;
+  width: 100%;
+  justify-content: left;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.project-links li {
+  margin-right: 20px;
+}
+
+.project-links a {
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(125, 217, 166);
 }
