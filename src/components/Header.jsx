@@ -37,10 +37,13 @@ const Header = () => {
           Nice to meet you! I'm{" "}
           <span id="full-name">Dorian Taponzing Donfack.</span>
         </h1>
-        <p>
+        <p className="description">
           Based in Georgia, USA, I'm an aspiring software engineer passionate
           about building accessible web apps that users love.
         </p>
+      </div>
+      <div className="contact-link-container">
+        <a href="#">Contact Me</a>
       </div>
     </div>
   );

@@ -1,12 +1,17 @@
 #header {
-  margin: 20px 20px;
+  padding: 20px 20px;
+  background-color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 50px;
+  border-radius: 0 0 50px 50px;
 }
 
 #my-name {
   font-size: 1.5em;
+  margin: 0;
 }
 
 .links {
@@ -14,6 +19,8 @@
   flex-direction: row;
   padding: 0;
   list-style-type: none;
+  width: 60%;
+  justify-content: space-between;
 }
 
 .links li {
@@ -21,8 +28,8 @@
 }
 
 li img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 .welcome-text {
@@ -39,4 +46,66 @@ li img {
 
 .dorian-img {
   width: 80%;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.contact-link-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-link-container a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(125, 217, 166);
+  font-weight: 700;
+}
+
+/********************** EXPERIENCE ********************/
+#experience-container {
+  border-radius: 0 0 50px 50px;
+  background-color: #fff;
+  height: 250px;
+  width: 100%;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+#experience-container-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.experience-item {
+  display: flex;
+  flex: 0 0 50%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-item p {
+  font-size: 0.875em;
+}
+
+.experience-item img {
+  width: 75px;
+  height: 75px;
+}
+
+/******************* PROJECTS *******************/
+#projects-container {
+  background-color: #000;
 }
