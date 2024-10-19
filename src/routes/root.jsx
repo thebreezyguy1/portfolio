@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import "../App.css";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 const Root = () => {
   return (
@@ -10,6 +11,7 @@ const Root = () => {
       <Header />
       <Experience />
       <Projects />
+      <Contact />
     </>
   );
 };
