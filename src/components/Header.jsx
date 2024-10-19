@@ -4,33 +4,12 @@ import instaImg from "../assets/instagram-new.png";
 import linkedinImg from "../assets/linkedin.png";
 import twitterxImg from "../assets/twitterx.png";
 import dorianImg from "../assets/dorian.png";
+import Links from "./sub-components/Links";
 
 const Header = () => {
   return (
     <div id="header">
-      <h1 id="my-name">doriantaponzing</h1>
-      <ul className="links">
-        <li>
-          <a href="https://github.com/thebreezyguy1">
-            <img src={githubImg} alt="github" />
-          </a>
-        </li>
-        <li>
-          <a href="https://instagram.com/thebreezyguy">
-            <img src={instaImg} alt="instagram" />
-          </a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/in/dorian-taponzing-donfack">
-            <img src={linkedinImg} alt="linkedin" />
-          </a>
-        </li>
-        <li>
-          <a href="https://x.com/thebreezyguy168">
-            <img src={twitterxImg} alt="x" />
-          </a>
-        </li>
-      </ul>
+      <Links />
       <img className="dorian-img" src={dorianImg} alt="dorian-img" />
       <div className="welcome-text">
         <h1>

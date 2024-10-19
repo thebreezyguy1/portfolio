@@ -4,6 +4,7 @@ import "../App.css";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Root = () => {
   return (
@@ -12,6 +13,7 @@ const Root = () => {
       <Experience />
       <Projects />
       <Contact />
+      <Footer />
     </>
   );
 };
