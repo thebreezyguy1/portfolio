@@ -5,10 +5,11 @@ import linkedinImg from "../assets/linkedin.png";
 import twitterxImg from "../assets/twitterx.png";
 import dorianImg from "../assets/dorian.png";
 import Links from "./sub-components/Links";
+import "./header.css";
 
 const Header = () => {
   return (
-    <div id="header">
+    <div id="header" className="container black-container flex-container">
       <Links />
       <img className="dorian-img" src={dorianImg} alt="dorian-img" />
       <div className="welcome-text">

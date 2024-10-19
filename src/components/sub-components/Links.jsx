@@ -3,12 +3,13 @@ import githubImg from "../../assets/github.png";
 import instaImg from "../../assets/instagram-new.png";
 import linkedinImg from "../../assets/linkedin.png";
 import twitterxImg from "../../assets/twitterx.png";
+import "./links.css";
 
 const Links = () => {
   return (
     <>
       <h1 id="my-name">doriantaponzing</h1>
-      <ul className="links">
+      <ul className="links flex-container">
         <li>
           <a href="https://github.com/thebreezyguy1">
             <img src={githubImg} alt="github" />

@@ -4,6 +4,7 @@ import cssImg from "../assets/css-icon.webp";
 import jsImg from "../assets/js-logo.png";
 import pythonImg from "../assets/python-logo.png";
 import javaImg from "../assets/java-logo.png";
+import "./experience.css";
 
 const Experience = () => {
   useEffect(() => {
@@ -27,9 +28,9 @@ const Experience = () => {
   }, []);
 
   return (
-    <div id="experience-container">
-      <div id="experience-container-slider" className="slider">
-        <div className="experience-item">
+    <div id="experience-container" className="container flex-container">
+      <div id="experience-container-slider" className="slider flex-container">
+        <div className="experience-item flex-container">
           <img src={htmlImg} alt="html-img" />
           <p>4 Years of Experience</p>
         </div>

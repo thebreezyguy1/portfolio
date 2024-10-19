@@ -1,0 +1,11 @@
+.form-container {
+  width: 100%;
+}
+
+.registration-form {
+  justify-content: left;
+}
+
+.button-container {
+  justify-content: right;
+}

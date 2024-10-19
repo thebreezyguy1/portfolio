@@ -1,0 +1,22 @@
+#experience-container {
+  height: 250px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#experience-container-slider {
+  transition: transform 0.5s ease-in-out;
+}
+
+.experience-item {
+  flex: 0 0 50%;
+}
+
+.experience-item p {
+  font-size: 0.875em;
+}
+
+.experience-item img {
+  width: 75px;
+  height: 75px;
+}

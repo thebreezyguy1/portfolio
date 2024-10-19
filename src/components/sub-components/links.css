@@ -1,0 +1,17 @@
+.links {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.links li:last-child {
+  margin-right: 0;
+}
+
+.links a {
+  border: 0;
+}
+
+li img {
+  width: 30px;
+  height: 30px;
+}
