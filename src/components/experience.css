@@ -1,7 +1,6 @@
 #experience-container {
+  width: 100%;
   height: 250px;
-  overflow: hidden;
-  z-index: 1;
 }
 
 #experience-container-slider {
@@ -9,7 +8,8 @@
 }
 
 .experience-item {
-  flex: 0 0 50%;
+  text-align: center;
+  align-content: center;
 }
 
 .experience-item p {

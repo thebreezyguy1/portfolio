@@ -5,57 +5,100 @@ import jsImg from "../assets/js-logo.png";
 import pythonImg from "../assets/python-logo.png";
 import javaImg from "../assets/java-logo.png";
 import "./experience.css";
+import "swiper/css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 const Experience = () => {
-  useEffect(() => {
-    const slider = document.getElementById("experience-container-slider");
-    let currentIndex = 0;
+  // const swiper = new Swiper(".swiper", {
+  //   // configure swiper to use modules
+  //   modules: [Navigation, Pagination],
+  //   autoplay: {
+  //     delay: 500,
+  //   },
+  //   slidesPerView: 1,
+  //   spaceBetween: 10,
+  //   breakpoints: {
+  //     320: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 20,
+  //     },
+  //     480: {
+  //       slidesPerView: 3,
+  //       spaceBetween: 30,
+  //     },
+  //     640: {
+  //       slidesPerView: 4,
+  //       spaceBetween: 40,
+  //     },
+  //   },
 
-    const slideItems = () => {
-      const items = document.querySelectorAll(".experience-item");
-      const totalItems = items.length;
-      const itemsPerSlide = 2;
-      const totalSlides = Math.ceil(totalItems / itemsPerSlide);
-
-      currentIndex = (currentIndex + 1) % totalSlides;
-      const offset = -(currentIndex * 100);
-      slider.style.transform = `translateX(${offset}%)`;
-    };
-
-    const interval = setInterval(slideItems, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
+  //   speed: 400,
+  //   direction: "horizontal",
+  //   loop: true,
+  // });
 
   return (
-    <div id="experience-container" className="container flex-container">
-      <div id="experience-container-slider" className="slider flex-container">
-        <div className="experience-item flex-container">
-          <img src={htmlImg} alt="html-img" />
-          <p>4 Years of Experience</p>
-        </div>
-        <div className="experience-item">
-          <img src={cssImg} alt="css-img" />
-          <p>4 Years of Experience</p>
-        </div>
-        <div className="experience-item">
-          <img src={jsImg} alt="js-img" />
-          <p>4 Years of Experience</p>
-        </div>
-        <div className="experience-item">
-          <img src={pythonImg} alt="python-img" />
-          <p>4 Years of Experience</p>
-        </div>
-        {/* <div className="experience-item">
-          <img src={javaImg} alt="java-img" />
-          <p>4 Years of Experience</p>
-        </div>
-        <div className="experience-item">
-          <img src={pythonImg} alt="python-img" />
-          <p>4 Years of Experience</p>
-        </div> */}
-      </div>
-    </div>
+    // <div className="swiper">
+    //   <div className="swipper-wrapper">
+    //     <div className="swiper-slide experience-item">
+    //       <img src={htmlImg} alt="html-img" />
+    //       <p>4 Years of Experience</p>
+    //     </div>
+    //     <div className="swiper-slide experience-item">
+    //       <img src={cssImg} alt="css-img" />
+    //       <p>4 Years of Experience</p>
+    //     </div>
+    //     <div className="swiper-slide experience-item">
+    //       <img src={jsImg} alt="js-img" />
+    //       <p>4 Years of Experience</p>
+    //     </div>
+    //     <div className="swiper-slide experience-item">
+    //       <img src={pythonImg} alt="python-img" />
+    //       <p>4 Years of Experience</p>
+    //     </div>
+    //     {/* <div className="experience-item">
+    //       <img src={javaImg} alt="java-img" />
+    //       <p>4 Years of Experience</p>
+    //     </div>
+    //     <div className="experience-item">
+    //       <img src={pythonImg} alt="python-img" />
+    //       <p>4 Years of Experience</p>
+    //     </div> */}
+    //   </div>
+    // </div>
+    <Swiper
+      slidesPerView={2}
+      spaceBetween={30}
+      loop={true}
+      onSlideChange={() => console.log("slide change")}
+      onSwiper={(swiper) => console.log(swiper)}
+      id="experience-container"
+      className="container"
+      autoplay={{ delay: 3000, disableOnInteraction: false }}
+      modules={[Autoplay]}
+    >
+      <SwiperSlide className="experience-item">
+        <img src={htmlImg} alt="html-img" />
+        <p>4 Years of Experience</p>
+      </SwiperSlide>
+      <SwiperSlide className="experience-item">
+        <img src={cssImg} alt="css-img" />
+        <p>4 Years of Experience</p>
+      </SwiperSlide>
+      <SwiperSlide className="experience-item">
+        <img src={jsImg} alt="js-img" />
+        <p>4 Years of Experience</p>
+      </SwiperSlide>
+      <SwiperSlide className="experience-item">
+        <img src={pythonImg} alt="python-img" />
+        <p>4 Years of Experience</p>
+      </SwiperSlide>
+      <SwiperSlide className="experience-item">
+        <img src={javaImg} alt="java-img" />
+        <p>4 Years of Experience</p>
+      </SwiperSlide>
+    </Swiper>
   );
 };
 

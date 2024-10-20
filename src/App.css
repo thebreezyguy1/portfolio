@@ -96,3 +96,8 @@ a,
 #contact-container h1 {
   margin-top: 40px;
 }
+
+.welcome-text h1,
+#projects-container h1 {
+  font-size: 2em;
+}
