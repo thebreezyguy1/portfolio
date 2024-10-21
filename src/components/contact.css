@@ -9,3 +9,9 @@
 .button-container {
   justify-content: right;
 }
+
+@media screen and (min-width: 640px) {
+  .contact-inner-container {
+    width: 50%;
+  }
+}

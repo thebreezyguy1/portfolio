@@ -7,7 +7,7 @@ import "./links.css";
 
 const Links = () => {
   return (
-    <>
+    <div className="header-links-container">
       <h1 id="my-name">doriantaponzing</h1>
       <ul className="links flex-container">
         <li>
@@ -31,7 +31,7 @@ const Links = () => {
           </a>
         </li>
       </ul>
-    </>
+    </div>
   );
 };
 

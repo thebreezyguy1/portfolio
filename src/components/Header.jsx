@@ -12,6 +12,7 @@ const Header = () => {
     <div id="header" className="container black-container flex-container">
       <Links />
       <img className="dorian-img" src={dorianImg} alt="dorian-img" />
+      {/* <div className="pattern-container"></div> */}
       <div className="welcome-text">
         <h1>
           Nice to meet you! I'm{" "}

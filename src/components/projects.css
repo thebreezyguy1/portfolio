@@ -1,6 +1,6 @@
 #projects-container {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .project-block {
@@ -32,4 +32,21 @@
   font-size: 1.15em;
   font-weight: 600;
   color: rgb(183, 183, 183);
+}
+
+@media screen and (min-width: 640px) {
+  .projects-blocks-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    justify-content: space-between;
+  }
+
+  .project-block {
+    flex: 0 0 calc(50% - 20px);
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+  }
 }
