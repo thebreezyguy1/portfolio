@@ -98,23 +98,23 @@ const Experience = () => {
     >
       <SwiperSlide className="experience-item">
         <img src={htmlImg} alt="html-img" />
-        <p>4 Years of Experience</p>
+        <p>HTML5</p>
       </SwiperSlide>
       <SwiperSlide className="experience-item">
         <img src={cssImg} alt="css-img" />
-        <p>4 Years of Experience</p>
+        <p>CSS3</p>
       </SwiperSlide>
       <SwiperSlide className="experience-item">
         <img src={jsImg} alt="js-img" />
-        <p>4 Years of Experience</p>
+        <p>JavaScript</p>
       </SwiperSlide>
       <SwiperSlide className="experience-item">
         <img src={pythonImg} alt="python-img" />
-        <p>4 Years of Experience</p>
+        <p>Python</p>
       </SwiperSlide>
       <SwiperSlide className="experience-item">
         <img src={javaImg} alt="java-img" />
-        <p>4 Years of Experience</p>
+        <p>Java</p>
       </SwiperSlide>
     </Swiper>
   );

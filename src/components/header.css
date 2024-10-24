@@ -37,3 +37,9 @@
     box-sizing: border-box;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .dorian-img {
+    right: 100px;
+  }
+}
